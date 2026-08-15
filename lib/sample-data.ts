@@ -1,0 +1,3 @@
+import type { DashboardData } from "./types";
+const now=Date.now(); const candles=Array.from({length:100},(_,i)=>{const base=154+(i-100)*.008+Math.sin(i*.42)*.13;return{time:now-(100-i)*3600000,open:base,high:base+.08,low:base-.07,close:base+Math.sin(i)*.025}});
+export const initialDashboard: DashboardData={quote:{price:candles.at(-1)!.close,change:.12,changePercent:.08},candles,indicators:[],composite:{score:0,confidence:0,regime:"loading",modifiers:[]},timeframes:[],agreement:{percent:0,bullish:0,neutral:0,bearish:0},heatmap:[],changes:[],summary:"Market data is being refreshed.",updatedAt:new Date().toISOString(),source:{name:"Connecting",live:false}};
