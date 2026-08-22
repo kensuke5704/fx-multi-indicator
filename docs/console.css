@@ -30,3 +30,6 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* The chart is self-explanatory; omit the redundant range footer. */
 .trade #range{display:none!important}
+
+/* Increase chart-grid contrast without competing with the price line. */
+.trade .gridline{stroke:#9da9a0!important}.trade .zero{stroke:#7d8b81!important}
