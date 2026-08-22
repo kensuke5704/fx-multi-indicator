@@ -9,3 +9,15 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* The active state follows the current hash, not the original markup class. */
 .position-mode #marketTab{color:#a5aca7!important;border-bottom:0!important}.position-mode #positionTab{color:#f7f8f4!important;border-bottom:3px solid #6fb07d!important}
+
+/* Position inputs remain comfortably tappable without spanning the whole panel. */
+.trade input,.trade select{width:min(260px,100%)!important}
+
+/* Draw the active underline outside layout so tab labels never shift vertically. */
+.tabs a{position:relative;border-bottom:0!important}.tabs .on::after,.position-mode #positionTab::after{content:"";position:absolute;right:0;bottom:0;left:0;height:3px;background:#6fb07d}.position-mode #marketTab::after{display:none}
+
+/* Balance the hero labels vertically instead of leaving the spare height below. */
+.hero-tile{min-height:0!important;padding-top:34px!important;padding-bottom:34px!important}
+
+/* Keep the market summary as one continuous terminal-style status line. */
+.wrap>p{max-width:none!important;font-size:14px!important;white-space:nowrap;overflow-x:auto;overflow-y:hidden}
