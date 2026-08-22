@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Vector JPY Signal">
+  <rect width="128" height="128" rx="28" fill="#111111"/>
+  <path d="M29 91 55 65l16 16 29-29" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-width="12"/>
+  <path d="M80 52h20v20" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-width="12"/>
+</svg>
