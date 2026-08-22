@@ -68,3 +68,6 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* Apply the same directional language to the four primary readings. */
 .hero-tile{background:#f8f8f4!important}.hero-tile.up{background:#eaf3ec!important}.hero-tile.down{background:#faece8!important}
+
+/* Adopt the monochrome Range mark in the console header. */
+.brand-mark{width:22px;height:22px;display:block;flex:0 0 auto}.brand-lockup{display:flex;align-items:center;gap:9px;white-space:nowrap}

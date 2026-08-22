@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#153e31"/>
-  <path d="M13 43.5 25.5 31l8 6.5L51 20" fill="none" stroke="#f4f3ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
-  <path d="M40 20h11v11" fill="none" stroke="#62c58a" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
-  <circle cx="13" cy="43.5" r="3" fill="#62c58a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Vector JPY Range">
+  <rect width="128" height="128" rx="28" fill="#111111"/>
+  <path d="M27 40h74M27 88h74" fill="none" stroke="#ffffff" stroke-linecap="square" stroke-width="10"/>
+  <path d="m43 64 21-18 21 18-21 18Z" fill="#ffffff"/>
 </svg>
