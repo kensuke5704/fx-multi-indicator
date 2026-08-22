@@ -45,6 +45,9 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 /* Give the four primary market readings a restrained, unified emphasis. */
 .hero-tile{background:#edf3ed!important}
 
+/* Give the Position panel a little breathing room before its closing rule. */
+.trade .grid{padding-bottom:12px!important}
+
 /* The chart is self-explanatory; omit the redundant range footer. */
 .trade #range{display:none!important}
 
