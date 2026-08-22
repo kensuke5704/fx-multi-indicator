@@ -62,3 +62,6 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* Mirror the Position heading treatment above the Market overview. */
 .market-title{margin:13px 0 14px!important}.market-title+.hero{margin-top:0!important}
+
+/* Surface directional signals without colouring neutral observations. */
+.card.signal.up,.card.signal.bullish{background:#eaf3ec!important}.card.signal.down,.card.signal.bearish{background:#faece8!important}
