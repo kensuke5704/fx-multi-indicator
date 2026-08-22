@@ -31,6 +31,9 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 /* Match summary spacing above and below the status text. */
 .wrap>p{margin-top:13px!important}
 
+/* Center the temporary loading/error message before the market dashboard renders. */
+#app:not(:has(.hero)){display:flex;align-items:center;justify-content:center;min-height:calc(100vh - 54px);text-align:center}
+
 /* The chart is self-explanatory; omit the redundant range footer. */
 .trade #range{display:none!important}
 
