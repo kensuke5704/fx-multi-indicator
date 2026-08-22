@@ -48,6 +48,9 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 /* Give the Position panel a little breathing room before its closing rule. */
 .trade .grid{padding-bottom:12px!important}
 
+/* Start the primary reading strip with the same rule language as its base. */
+.hero{margin-top:12px!important;border-top:1px solid var(--rule)!important}
+
 /* The chart is self-explanatory; omit the redundant range footer. */
 .trade #range{display:none!important}
 
