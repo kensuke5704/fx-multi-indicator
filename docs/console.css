@@ -28,6 +28,9 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 /* Separate the Position labels from the panel's top rule. */
 .trade .grid{padding-top:10px!important}
 
+/* Match summary spacing above and below the status text. */
+.wrap>p{margin-top:13px!important}
+
 /* The chart is self-explanatory; omit the redundant range footer. */
 .trade #range{display:none!important}
 
