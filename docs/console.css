@@ -21,3 +21,6 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* Keep the market summary as one continuous terminal-style status line. */
 .wrap>p{max-width:none!important;font-size:14px!important;white-space:nowrap;overflow-x:auto;overflow-y:hidden}
+
+/* Remove the four empty bands between consecutive section rules. */
+.context{margin-bottom:0!important}.section+.section{margin-top:0!important}
