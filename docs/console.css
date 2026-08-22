@@ -39,6 +39,12 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 .position-mode #positionTab{padding-bottom:0!important}
 
+/* Group the three headline position values in one clearly bounded panel. */
+.trade .result{gap:0!important;border:1px solid var(--rule)!important}.trade .result .box{padding:18px 20px!important;border-left:1px solid var(--soft-rule)!important}.trade .result .box:first-child{border-left:0!important}
+
+/* Give the four primary market readings a restrained, unified emphasis. */
+.hero-tile{background:#edf3ed!important}
+
 /* The chart is self-explanatory; omit the redundant range footer. */
 .trade #range{display:none!important}
 
