@@ -6,3 +6,6 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* Compact density: remove unused vertical room while keeping the graph readable. */
 .hero-tile{min-height:106px!important;padding:19px 20px 16px!important}.hero-tile .price,.hero-tile .regime,.hero-tile.donchian strong{margin:9px 0 6px!important}.wrap>p{margin-top:20px!important}.context{margin:8px 0 20px!important;padding-bottom:13px!important}.section{padding-top:16px!important}.section+.section{margin-top:20px!important}.section>.label{margin-bottom:10px!important}.card{min-height:96px!important;padding:14px 20px 15px!important}.card strong{margin:7px 0 5px!important}.card small{margin-top:5px!important}
+
+/* The active state follows the current hash, not the original markup class. */
+.position-mode #marketTab{color:#a5aca7!important;border-bottom:0!important}.position-mode #positionTab{color:#f7f8f4!important;border-bottom:3px solid #6fb07d!important}
