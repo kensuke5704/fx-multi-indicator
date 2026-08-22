@@ -24,3 +24,9 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* Remove the four empty bands between consecutive section rules. */
 .context{margin-bottom:0!important}.section+.section{margin-top:0!important}
+
+/* Separate the Position labels from the panel's top rule. */
+.trade .grid{padding-top:10px!important}
+
+/* The chart is self-explanatory; omit the redundant range footer. */
+.trade #range{display:none!important}
