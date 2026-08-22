@@ -65,3 +65,6 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 
 /* Surface directional signals without colouring neutral observations. */
 .card.signal.up,.card.signal.bullish{background:#eaf3ec!important}.card.signal.down,.card.signal.bearish{background:#faece8!important}
+
+/* Apply the same directional language to the four primary readings. */
+.hero-tile{background:#f8f8f4!important}.hero-tile.up{background:#eaf3ec!important}.hero-tile.down{background:#faece8!important}
