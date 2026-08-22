@@ -37,6 +37,8 @@ body.trade{background:var(--paper)!important}.trade .top{display:none!important}
 /* Neutralize the legacy border: only the absolute underline may mark selection. */
 .tabs .on,.position-mode #positionTab{border-bottom:0!important}
 
+.position-mode #positionTab{padding-bottom:0!important}
+
 /* The chart is self-explanatory; omit the redundant range footer. */
 .trade #range{display:none!important}
 
