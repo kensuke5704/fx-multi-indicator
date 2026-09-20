@@ -6,7 +6,7 @@ export async function OPTIONS(){return new Response(null,{headers:cors})}
 
 export async function GET(){
   try{
-    const response=await fetch("https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?range=max&interval=1d&events=div%2Csplits",{headers:{"User-Agent":"Mozilla/5.0"},next:{revalidate:60}});
+    const period2=Math.floor(Date.now()/1000),response=await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/TQQQ?period1=1265864400&period2=${period2}&interval=1d&events=div%2Csplits`,{headers:{"User-Agent":"Mozilla/5.0"},next:{revalidate:60}});
     if(!response.ok)throw Error("provider");
     const payload=await response.json(),chart=payload.chart.result[0],quote=chart.indicators.quote[0],adjusted=chart.indicators.adjclose?.[0]?.adjclose||quote.close;
     const series:Point[]=chart.timestamp.map((time:number,index:number)=>({time:time*1000,price:adjusted[index]??quote.close[index]})).filter((point:Point)=>Number.isFinite(point.price)&&point.price>0);
