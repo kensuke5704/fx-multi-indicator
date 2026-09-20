@@ -1,5 +1,5 @@
 (()=>{
-  const app=document.getElementById('tqqq'),money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:2}).format(n),date=t=>new Date(t).toLocaleDateString('en-CA',{year:'numeric',month:'short',day:'2-digit'}),API='https://vector-jpy-trend.kensuke5704.chatgpt.site/api/market/TQQQ';
+  const app=document.getElementById('tqqq'),money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:2}).format(n),date=t=>new Date(t).toLocaleDateString('en-CA',{year:'numeric',month:'short',day:'2-digit'}),API='https://vector-jpy-trend.kensuke5704.chatgpt.site/api/market/quote';
   let loaded=false,loading=false;
   function draw(series){
     const recent=series.slice(-180),lo=Math.min(...recent.map(x=>x.price)),hi=Math.max(...recent.map(x=>x.price)),range=hi-lo||1,path=recent.map((x,i)=>`${i?'L':'M'}${(i/(recent.length-1)*100).toFixed(2)} ${(88-(x.price-lo)/range*72).toFixed(2)}`).join(' ');
